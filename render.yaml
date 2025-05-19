@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: telegram-jokes-api
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn app:app
+    plan: free
+    envVars:
+      - key: API_ID
+        value: <27239617>
+      - key: API_HASH
+        value: <a053193a2067f9ea7d7834a844cf061b>
